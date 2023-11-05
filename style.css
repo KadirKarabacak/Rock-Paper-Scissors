@@ -1,0 +1,249 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 50px;
+  font-family: "Permanent Marker", cursive;
+  letter-spacing: 4px;
+}
+
+body {
+  background: #e96443; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #904e95,
+    #e96443
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #904e95,
+    #e96443
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+section {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  padding: 6% 0%;
+  color: black;
+}
+
+.rockhead {
+  color: black;
+  font-size: 65px;
+}
+
+
+.paperhead {
+  color: rgb(255, 255, 255);
+  font-size: 65px;
+}
+
+.scishead {
+  color: orange;
+  font-size: 65px;
+}
+
+.start {
+  font-weight: bold;
+  color: white;
+  background-color: #101010;
+  padding: 1% 3%;
+  border-radius: 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+.start:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+.again {
+  font-weight: bold;
+  color: white;
+  background-color: #101010;
+  padding: 1% 2%;
+  border-radius: 15px;
+  border: none;
+  transition: 0.3s;
+}
+
+.again:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+
+/* ANIMATION */
+
+.animated {
+  animation-duration: 2s;
+  animation-name: rockPaperScissors;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rockPaperScissors {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(1);
+  }
+  100% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.game-main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+
+.game-scene {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 3% 30%;
+}
+
+.game-scene i{
+  font-size: 90px;
+}
+
+.comp-icon{
+  width: 68%;
+  transform: rotate(-90deg);
+}
+
+.game-action {
+  width: 33%;
+}
+
+.fight-head {
+  color: orange;
+}
+
+.winner-container{
+  display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 3%;
+}
+
+.game-head {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.selections {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 0 30%;
+}
+
+.selection-buttons {
+  cursor: pointer;
+  border: none;
+  background-color: orange;
+  border-radius: 10px;
+  padding: 1% 3%;
+  box-shadow: 1.8px 1.8px 0.9px -3px rgba(0, 0, 0, 0.095),
+    14px 14px 7px -3px rgba(0, 0, 0, 0.19);
+  transition: 0.3s;
+}
+
+.selection-buttons:hover {
+  border-radius: 40%;
+  color: white;
+  box-shadow: none;
+  animation-duration: 1.2s;
+  animation-name: buttonHover;
+  animation-iteration-count: 1;
+}
+
+.selection-buttons img{
+  width: 70px;
+  height: 70px;
+}
+
+@keyframes buttonHover {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Add on game starts */
+.userAnimate{
+  animation-duration: 0.8s;
+  animation-name: userAnimate;
+  animation-iteration-count: 3;
+}
+
+@keyframes userAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Add on game starts */
+.compAnimate{
+  animation-duration: 0.8s;
+  animation-name: compAnimate;
+  animation-iteration-count: 3;
+}
+@keyframes compAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.compFist{
+  transform: rotate(270deg)!important;
+}

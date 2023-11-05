@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  <body>
+    <section>
+      <!-- Greet Page -->
+      <div class="greet-container">
+        <h1 class="header">
+          <span class="rockhead"
+            >Rock
+            <i class="fa-solid fa-hand-back-fist fa-rotate-90 animated"></i
+          ></span>
+          -
+          <span class="paperhead"
+            >Paper <i class="fa-solid fa-hand fa-rotate-90 animated"></i
+          ></span>
+          -
+          <span class="scishead"
+            >Scissors
+            <i class="fa-solid fa-hand-scissors fa-flip-horizontal animated"></i
+          ></span>
+        </h1>
+        <button class="start">START</button>
+      </div>
+      <!-- Game Page -->
+      <div class="game-main hidden">
+        <div class="game-head">
+          <h1 class="fight-head">Let's Fight!</h1>
+          <!-- <button class="again">AGAIN</button> -->
+        </div>
+        <div class="game-scene">
+          <div class="game-action user"><img src="img/user-fist.png" alt="user-fist"></div>
+          <div class="game-action computer"><img src="img/computer-fist.png" alt="computer-fist"></div>
+        </div>
+        <div class="winner-container">
+          <div class="game-action winner"><!-- Winner -->YOU LOSE</div>
+        </div>
+        <div class="selections">
+          <button class="selection-buttons rock"><img src="img/user-fist.png" alt="user-fist"></button>
+          <button class="selection-buttons paper"><img src="img/user-hand.png" alt="user-hand"></button>
+          <button class="selection-buttons scissors"><img src="img/user-scissors.png" alt="user-scissors"></button>
+        </div>
+      </div>
+    </section>
+    <script src="https://kit.fontawesome.com/b60a093c70.js" crossorigin="anonymous"></script>  </head>
+    <script defer src="app.js"></script>
+  </body>
+</html>
