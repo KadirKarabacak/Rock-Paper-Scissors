@@ -461,7 +461,7 @@ section {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(-45deg);
+    transform: rotate(-20deg);
   }
   100% {
     transform: rotate(0deg);
