@@ -245,7 +245,6 @@ section {
 @media(max-width:37.5em){
   .game-scene{
     padding: 0;
-    padding-bottom: 3rem;
   }
 }
 
@@ -357,7 +356,7 @@ section {
 }
 @media (max-width:37.5em){
   .winner-container{
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -370,8 +369,8 @@ section {
 }
 @media(max-width:37.5em){
   .game-head{
-    line-height: 5rem;
-    padding-bottom: 4rem;
+    line-height: 4rem;
+    padding-bottom: 1rem;
   }
 }
 
